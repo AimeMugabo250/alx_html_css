@@ -1,40 +1,52 @@
-   /* Make <body> a flex container in column direction */
-   body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+/* Body layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  /* Make <main> a flex container in row direction */
-  main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-  }
+/* Main container: horizontal split */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
 
-  /* Set article to take 2/3 of the space */
-  article {
-    flex: 2;
-    overflow-y: auto;
-    padding: 1rem;
-    background-color: #f0f0f0;
-  }
+/* Article: 2/3 of space, scrollable */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
 
-  /* Set aside to take 1/3 of the space */
-  aside {
-    flex: 1;
-    overflow-y: auto;
-    padding: 1rem;
-    background-color: #e0e0e0;
-  }
+/* Aside: 1/3 of space, scrollable */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
 
-  /* Optional: header and footer styling */
-  header, footer {
-    flex: none;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
+/* Header and footer styles */
+header,
+footer {
+  flex: none;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive behavior for smartphones */
+.works_on_smartphone main {
+  flex-direction: column;
+}
+
+.works_on_smartphone article,
+.works_on_smartphone aside {
+  flex: none;
+  width: 100%;
+}
