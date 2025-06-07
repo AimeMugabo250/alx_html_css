@@ -1,106 +1,4 @@
-        /* Reset and base styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        header, footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            display: flex;
-            flex-direction: row;
-            flex: auto;
-        }
-
-        article {
-            flex: 2;
-            padding: 20px;
-            overflow-y: auto;
-            background-color: #ffffff;
-        }
-
-        aside {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            background-color: #f0f0f0;
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        img {
-            max-width: 300px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            display: block;
-            margin-top: 20px;
-        }
-
-        img:hover {
-            transform: scale(1.05);
-        }
-
-        a {
-            text-decoration: none;
-            color: #3498db;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .table-container {
-            margin-top: 40px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 12px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #2c3e50;
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-/* Base Styles (base.css) */
-    body {
+ body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
@@ -154,14 +52,31 @@
       background-color: #f2f2f2;
     }
 
-    header, footer {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    /* Header menu with logo */
+    .header-menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      font-size: 1.8rem;
     }
 
-    /* Flexbox Layout (styles.css) */
+    .logo {
+      font-size: 2.5rem;
+      color: #e67e22; /* orange color */
+      user-select: none;
+    }
+
+    header {
+      background-color: #34495e; /* darker blue */
+      color: #ecf0f1; /* light text */
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    /* Flexbox layout */
     body.works_on_smartphone {
       display: flex;
       flex-direction: column;
@@ -176,9 +91,30 @@
 
     article {
       flex: 2;
-      padding: 20px;
+      padding: 30px;
       overflow-y: auto;
-      background-color: #ffffff;
+      background: linear-gradient(135deg, #f0f8ff, #dbe9ff);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #2c3e50;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    article h2, article h3 {
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 6px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    article a {
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    article a:hover {
+      text-decoration: underline;
     }
 
     aside {
@@ -190,6 +126,13 @@
 
     .table-container {
       margin-top: 40px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
     /* Responsive behavior */
