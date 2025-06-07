@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Cool First Webpage</title>
-    <link href="base.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+  <title>My Responsive Flexbox Webpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body class="works_on_smartphone">
+  <header>
+    <ul class="header-menu">
+      <li class="logo">&#x1F680;</li>
+      <li>Welcome to My Flexbox Webpage</li>
+    </ul>
+  </header>
+
+  <main>
     <article>
-        <h1>Welcome to My First Webpage</h1>
-        
-        <h2>About Me</h2>
-        <p>Hello! I'm learning how to create webpages using HTML. This is my very first project, and I'm excited to build more.</p>
+      <h2>About Me</h2>
+      <p>Hello! I'm learning how to create webpages using HTML and CSS. This is my first project with a structured layout!</p>
 
-        <h2>Why I Love Coding</h2>
-        <p>Coding allows me to bring my ideas to life and solve interesting problems. Every line of code teaches me something new.</p>
+      <h2>Why I Love Coding</h2>
+      <p>Coding allows me to bring ideas to life, solve problems, and keep learning every day.</p>
 
-        <h3>My Goals</h3>
-        <p>I aim to become a skilled developer and contribute to open-source projects. I also want to build apps that help people in meaningful ways.</p>
+      <h3>My Goals</h3>
+      <p>I want to become a full-stack developer and contribute to open-source projects.</p>
 
-        <h3>Fun Fact</h3>
-        <p>Did you know that the first website ever created is still online? It was built by Tim Berners-Lee in 1991!</p>
+      <h3>Fun Fact</h3>
+      <p>Did you know the first website ever made is still live? It was created by Tim Berners-Lee in 1991!</p>
 
-        <h2>Click the Image Below!</h2>
-        <a href="https://www.alxafrica.com/" target="_blank">
-            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
-        </a>
+      <h2>Click the Image Below!</h2>
+      <a href="https://www.alxafrica.com/" target="_blank">
+        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" />
+      </a>
 
-        <!-- New Learners Table -->
-        <div class="table-container">
-            <h2>Meet Some of the Learners</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>25</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>Emily</td>
-                        <td>28</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Michael</td>
-                        <td>32</td>
-                        <td>Australia</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>21</td>
-                        <td>UK</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <div class="table-container">
+        <h2>Meet Some of the Learners</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>John</td><td>25</td><td>USA</td></tr>
+            <tr><td>Emily</td><td>28</td><td>Canada</td></tr>
+            <tr><td>Michael</td><td>32</td><td>Australia</td></tr>
+            <tr><td>Sophia</td><td>21</td><td>UK</td></tr>
+          </tbody>
+        </table>
+      </div>
     </article>
+
+    <aside>
+      <h3>Quick Tips for Responsive Design</h3>
+      <ul>
+        <li>Use <code>display: flex;</code> for flexible layouts.</li>
+        <li>Apply <code>flex-direction: column;</code> on small screens.</li>
+        <li>Use the <code>viewport</code> meta tag for proper scaling.</li>
+        <li>Set <code>overflow-y: auto;</code> for scrollable content areas.</li>
+        <li>Assign proportional widths with <code>flex</code> property.</li>
+      </ul>
+
+      <h3>Resources</h3>
+      <p>Learn more about Flexbox and responsive design:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank" rel="noopener">MDN Flexbox Guide</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">CSS-Tricks Flexbox Guide</a></li>
+        <li><a href="https://web.dev/responsive-web-design-basics/" target="_blank" rel="noopener">Responsive Design Basics</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Cool Webpage</p>
+  </footer>
 </body>
 </html>
-
