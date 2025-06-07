@@ -94,115 +94,276 @@ main section:first-of-type button:hover {
 }
 
 /* Tutors Section */
-main section:first-of-type > div:nth-child(2) {
-  padding: 2rem;
-  text-align: center;
-}
-
-main section:first-of-type h2 {
-  margin-bottom: 2rem;
-}
-
-main section:first-of-type > div:nth-child(2) > div {
+.testimonial {
+  background-color: #c26eff; /* Purple background */
+  padding: 50px 20px;
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-main section:first-of-type > div:nth-child(2) > div > div {
-  width: 200px;
-}
-
-/* Testimonial */
-main section:nth-of-type(2) {
+.testimonial-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
   align-items: center;
-  padding: 4rem 2rem;
-  background: #fff5f7;
+  max-width: 800px;
+  gap: 30px;
 }
 
-main section:nth-of-type(2) div {
-  flex: 1;
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
 }
 
-blockquote {
+.testimonial-text blockquote {
+  color: white;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.testimonial-text h3 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.job-title {
+  color: white;
+  opacity: 0.7;
   font-style: italic;
-  color: #555;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 /* Popular Tutorials */
-main section:nth-of-type(3) {
-  padding: 4rem 2rem;
-  background-color: #f0f0f0;
+
+section {
+  padding: 50px 20px;
   text-align: center;
-}
-
-main section:nth-of-type(3) > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-main section:nth-of-type(3) > div > div {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Stars */
+section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+section h2 span {
+  color: #a855f7; /* Purple */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #a855f7;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7c3aed;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
 .fa-star {
-  color: gold;
+  color: #fbbf24;
+}
+
+.card .duration {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 20px;
 }
 
 /* Membership */
-main section:nth-of-type(4) {
+
+.membership {
+  padding: 60px 20px;
   text-align: center;
-  padding: 4rem 2rem;
+  background-color: #0f172a;
 }
 
-main section:nth-of-type(4) > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
-main section:nth-of-type(4) button {
-  background-color: #6c63ff;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+.membership h2 span {
+  color: #c084fc; /* Soft purple */
+  font-weight: 600;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.feature {
+  width: 200px;
+  text-align: center;
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(54%) saturate(628%) hue-rotate(227deg) brightness(99%) contrast(93%);
+}
+
+.feature h3 {
   font-size: 1rem;
-  transition: background 0.3s;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-main section:nth-of-type(4) button:hover {
-  background-color: #574fcc;
+.feature p {
+  font-size: 0.875rem;
+  color: #94a3b8; /* Light gray text */
+  line-height: 1.4;
+}
+
+.register-btn {
+  background-color: #c084fc;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #a855f7;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 /* FAQ */
-main section:nth-of-type(5) {
-  padding: 4rem 2rem;
-  background-color: #fff;
+
+.faq-section {
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 10px solid #0c1f33;
+  border-bottom: 10px solid #0c1f33;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-main section:nth-of-type(5) > div {
+.faq-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #0c1f33;
+}
+
+.faq-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-main section:nth-of-type(5) h3 {
-  color: #6c63ff;
-  margin-bottom: 0.5rem;
+.faq-item h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* Footer */
