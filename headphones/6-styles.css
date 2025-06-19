@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  .our-results {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .our-results .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #222;
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .result-item {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Pentagon shape */
+  .pentagon {
+    width: 70px;
+    height: 70px;
+    background-color: #0070f3; /* default blue */
+    clip-path: polygon(
+      50% 0%,
+      93% 35%,
+      76% 90%,
+      24% 90%,
+      7% 35%
+    );
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    user-select: none;
+  }
+
+  /* Different colors per pentagon */
+  .result-item:nth-child(1) .pentagon {
+    background-color: #0070f3; /* blue */
+  }
+
+  .result-item:nth-child(2) .pentagon {
+    background-color: #e94e77; /* pink */
+  }
+
+  .result-item:nth-child(3) .pentagon {
+    background-color: #f9a825; /* amber */
+  }
+
+  .result-item:nth-child(4) .pentagon {
+    background-color: #43a047; /* green */
+  }
+
+  .result-item h3 {
+    font-size: 2rem;
+    color: #0070f3;
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+
+  .result-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
