@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Landing Page with Hamburger Menu</title>
+  <link rel="stylesheet" href="8-styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">MySite</div>
+    <nav class="desktop-nav">
+      <a href="#what-we-do">What we do</a>
+      <a href="#our-results">Our results</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#what-we-do">What we do</a>
+    <a href="#our-results">Our results</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- Just dummy sections for demo -->
+<section id="what-we-do">
+  <h2>What we do</h2>
+  <p>We create awesome websites, mobile apps, and UI designs.</p>
+</section>
+
+<section id="our-results">
+  <h2>Our Results</h2>
+  <p>150+ Projects, 100+ Happy Clients, and more.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Drop us a message anytime!</p>
+</section>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
